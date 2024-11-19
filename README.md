@@ -25,7 +25,7 @@ Das Projekt wurde mit folgenden Technologien umgesetzt:
 ## Installation
 1. Klone das Repository:
    ```bash
-   git clone https://github.com/Neyzen48/Treppenglücksrad.git
+   git clone https://github.com/Neyzen48/Treppengluecksrad.git
    ```
 2. Navigiere in das Projektverzeichnis:
    ```bash
