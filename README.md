@@ -1,70 +1,71 @@
-# Getting Started with Create React App
+# Treppenglücksrad
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Das Treppenglücksrad ist eine interaktive Anwendung, die spielerisch über verschiedene Sicherheitsmaßnahmen zur Prävention von Treppenunfällen aufklärt. Die Nutzer können das Glücksrad drehen, um themenspezifische Informationen zu erhalten, wie z. B. zu den Themen „Schuhe“, „Beleuchtung“ oder „Rutschhemmung“.
 
-## Available Scripts
+## Inhaltsverzeichnis
+- [Features](#features)
+- [Technologien](#technologien)
+- [Installation](#installation)
+- [Nutzung](#nutzung)
+- [Lizenz](#lizenz)
 
-In the project directory, you can run:
+## Features
+- **Interaktives Glücksrad**: Spielerisches Drehen des Glücksrads, um verschiedene Präventionstipps anzuzeigen.
+- **Präventionstipps**: Nützliche Hinweise zur Vermeidung von Treppenunfällen.
+- **Dynamisches Design**: Fördert die Aufmerksamkeit und das Engagement der Nutzer.
+- **Zeitgesteuerte Anzeige**: Tipps werden für 8 Sekunden eingeblendet, bevor das Rad erneut gedreht werden kann.
 
-### `npm start`
+## Technologien
+Das Projekt wurde mit folgenden Technologien umgesetzt:
+- **React**: Für die Entwicklung der Benutzeroberfläche.
+- **Docker**: Zur Containerisierung und Bereitstellung der Anwendung.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Installation
+1. Klone das Repository:
+   ```bash
+   git clone https://github.com/Neyzen48/Treppenglücksrad.git
+   ```
+2. Navigiere in das Projektverzeichnis:
+   ```bash
+   cd Treppenglücksrad
+   ```
+3. Installiere die Abhängigkeiten:
+   ```bash
+   npm install
+   ```
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Nutzung
 
-### `npm test`
+### Starten der Anwendung
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+#### 1. Lokale Ausführung
+Starte die Anwendung lokal:
+   ```bash
+   npm run start
+   ```
 
-### `npm run build`
+#### 2. Docker
+Die Anwendung kann in einem Docker-Container ausgeführt werden.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+1. Kompiliere die Anwendung
+   ```bash
+   npm run build
+   ``` 
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+2. Docker-Image erstellen:
+   ```bash
+   docker build -t treppengluecksrad .
+   ```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+3. Docker-Container starten:
+   ```bash
+   docker run -it -p 8080:8080 --rm treppengluecksrad
+   ```
 
-### `npm run eject`
+### Interaktion
+- **Rad drehen**: Klicke auf den Button „Drehen“, um das Glücksrad zu aktivieren.
+- **Hinweise lesen**: Präventionstipps werden angezeigt und nach 8 Sekunden ausgeblendet.
+- **Wiederholen**: Nach der Anzeige kann das Rad erneut gedreht werden, um weitere Tipps zu erhalten.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Lizenz
+Dieses Projekt steht unter der [MIT-Lizenz](LICENSE).
