@@ -2,6 +2,8 @@
 
 Das Treppenglücksrad ist eine interaktive Anwendung, die spielerisch über verschiedene Sicherheitsmaßnahmen zur Prävention von Treppenunfällen aufklärt. Die Nutzer können das Glücksrad drehen, um themenspezifische Informationen zu erhalten, wie z. B. zu den Themen „Schuhe“, „Beleuchtung“ oder „Rutschhemmung“.
 
+- [Link zu online Webanwendung](https://treppen-gluecksrad-1027686172179.europe-west1.run.app)
+
 ## Inhaltsverzeichnis
 - [Features](#features)
 - [Technologien](#technologien)
